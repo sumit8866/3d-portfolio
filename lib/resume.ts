@@ -33,14 +33,14 @@ export const projects = [
   {
     name: "happypet.care",
     url: "https://happypet.care",
-    period: "Sep 2025 — Present",
-    blurb: "The Happy Pet website for pet parents. I built it in Next.js and Tailwind CSS, including its blog and pet breed guides.",
+    period: "Sep 2025 — Nov 2026",
+    blurb: "The Happy Pet website for pet parents. I built the whole site in Next.js and Tailwind CSS — every page, the blog and the pet breed guides.",
     stack: ["Next.js", "Tailwind CSS"],
   },
   {
     name: "happypet.tech",
     url: "https://happypet.tech",
-    period: "Sep 2025 — Present",
+    period: "Sep 2025 — Nov 2026",
     blurb: "The Happy Pet Tech company website. I work on its pages and UI.",
     stack: ["Next.js", "Tailwind CSS"],
   },
