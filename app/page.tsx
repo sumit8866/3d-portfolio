@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Nav from "@/components/Nav";
 import HeroCanvas from "@/components/HeroCanvas";
 import { Clock, Greeting } from "@/components/Clock";
@@ -201,8 +202,15 @@ function ExperienceAndToolkit() {
           <ul className="mt-8">
             {toolkit.map((t) => (
               <li key={t.key} className="flex items-baseline justify-between gap-6 border-b border-line py-5">
-                <span className="font-mono text-xs text-mute">{t.key}</span>
-                <span className="text-right text-lg font-medium">{t.value}</span>
+                <span className="font-mono text-xs whitespace-nowrap text-mute">{t.key}</span>
+                <span className="text-right text-lg font-medium">
+                  {t.value.split(" · ").map((item, i) => (
+                    <Fragment key={item}>
+                      {i > 0 && " · "}
+                      <span className="whitespace-nowrap">{item}</span>
+                    </Fragment>
+                  ))}
+                </span>
               </li>
             ))}
           </ul>
