@@ -24,12 +24,16 @@ export default function Home() {
 function Hero() {
   return (
     <section className="grid-paper border-b border-line pt-16">
-      <div className="mx-auto grid max-w-6xl items-end gap-12 px-4 py-14 sm:px-6 lg:min-h-[calc(100svh-12rem)] lg:grid-cols-[1.15fr_1fr] lg:py-20">
-        <div>
-          <p className="font-mono text-xs tracking-wider text-mute">
-            <Greeting />, i&apos;m <span className="px-1.5 text-line">/</span> surat, in
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-end gap-12 px-4 py-14 sm:px-6 lg:min-h-[calc(100svh-12rem)] lg:grid-cols-[1.15fr_1fr] lg:py-20">
+        <div className="min-w-0">
+          <p className="flex flex-wrap items-baseline font-mono text-xs tracking-wider text-mute">
+            <span className="whitespace-nowrap">
+              <Greeting />, i&apos;m
+            </span>
             <span className="px-1.5 text-line">/</span>
-            <span className="text-accent">
+            <span className="whitespace-nowrap">surat, in</span>
+            <span className="px-1.5 text-line">/</span>
+            <span className="whitespace-nowrap text-accent">
               <Clock />
             </span>
           </p>
@@ -48,7 +52,8 @@ function Hero() {
           </div>
         </div>
 
-        <div className="aspect-[5/4]">
+        {/* The canvas is absolutely positioned so its pixel size can never widen the layout on phones. */}
+        <div className="relative aspect-[5/4] w-full min-w-0 overflow-hidden">
           <HeroCanvas />
         </div>
       </div>
@@ -183,10 +188,10 @@ function ExperienceAndToolkit() {
           <SectionHead n="03" label="experience" />
           <ul className="mt-8">
             {experience.map((e) => (
-              <li key={e.role} className="grid grid-cols-[8.5rem_1fr] items-baseline gap-x-4 border-b border-line py-5 sm:grid-cols-[8.5rem_1fr_auto]">
+              <li key={e.role} className="grid grid-cols-1 items-baseline gap-y-1 border-b border-line py-5 sm:grid-cols-[8.5rem_1fr_auto] sm:gap-x-4">
                 <span className="font-mono text-xs whitespace-nowrap text-accent">{e.period}</span>
                 <span className="text-lg font-medium">{e.role}</span>
-                <span className="col-start-2 font-mono text-[11px] text-mute sm:col-start-3">{e.place}</span>
+                <span className="font-mono text-[11px] text-mute">{e.place}</span>
               </li>
             ))}
           </ul>

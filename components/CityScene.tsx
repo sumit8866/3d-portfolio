@@ -290,7 +290,7 @@ export default function CityScene() {
   const frameloop = !visible ? "never" : animate ? "always" : "demand";
 
   return (
-    <div ref={wrapper} className="h-full w-full">
+    <div ref={wrapper} className="absolute inset-0">
       <Canvas
         shadows
         frameloop={frameloop}
