@@ -25,8 +25,8 @@ export const facts = [
 ];
 
 export const marquee = {
-  big: ["React", "Next.js", "Redux", "TypeScript", "Tailwind CSS", "JavaScript", "Three.js", "Node.js", "Zustand", "Vite", "HTML5", "CSS3"],
-  small: ["responsive design", "rest apis", "react three fiber", "git", "bootstrap", "websockets", "c", "c++"],
+  big: ["React", "Next.js", "Redux", "TypeScript", "Tailwind CSS", "JavaScript", "HTML5", "CSS3", "Node.js", "Vite"],
+  small: ["responsive design", "rest api integration", "git", "bootstrap", "c", "c++"],
 };
 
 export const projects = [
@@ -61,8 +61,8 @@ export const experience = [
 
 export const toolkit = [
   { key: "languages", value: "JavaScript · TypeScript · HTML5 · CSS3 · C · C++" },
-  { key: "frameworks", value: "React · Next.js · Redux · Zustand" },
+  { key: "frameworks", value: "React · Next.js · Redux · REST API integration" },
   { key: "styling", value: "Tailwind CSS · Bootstrap · Responsive design" },
   { key: "tools", value: "Git" },
-  { key: "familiar with", value: "Three.js · React Three Fiber · Vite · Node.js · REST APIs · WebSockets" },
+  { key: "familiar with", value: "Vite · Node.js" },
 ];
