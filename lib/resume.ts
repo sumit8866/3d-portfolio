@@ -46,7 +46,7 @@ export const projects = [
   },
   {
     name: "City Life 3D",
-    url: "https://3d-city.up.railway.app",
+    url: "https://3d-gmae.vercel.app",
     period: "2026 · personal",
     blurb: "An open-world 3D city game that runs in the browser on desktop and phones, with up to 16 players in one city.",
     stack: ["React", "Three.js", "Rapier", "WebSockets"],
